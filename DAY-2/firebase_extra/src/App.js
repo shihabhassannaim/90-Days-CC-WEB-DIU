@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 import './App.css';
+import Home from './components/Home/Home';
+import Login from "./components/Login/Login";
+import { createContext, useContext, useState } from "react";
+
+//Day-2 , 12 / 9 / 2023
 
 function App() {
+ const userContext = createContext();
+
+  const [loggedInUser, setLoggedInUser] = useState({})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <BrowserRouter>
+        <h1>Name : {loggedInUser.name}</h1>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+    </userContext.Provider>
   );
 }
 
