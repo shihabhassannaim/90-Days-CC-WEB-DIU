@@ -10,15 +10,16 @@ import Login from "./components/Login/Login";
 import { createContext, useContext, useState } from "react";
 
 //Day-2 , 12 / 9 / 2023
+export const userContext = createContext();
+
 
 function App() {
- const userContext = createContext();
 
   const [loggedInUser, setLoggedInUser] = useState({})
+
   return (
     <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <BrowserRouter>
-        <h1>Name : {loggedInUser.name}</h1>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />

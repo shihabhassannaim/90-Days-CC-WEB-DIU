@@ -11,7 +11,7 @@ const PatientManagement = () => {
     }
     return (
         <div>
-            <h1>patient management : {state.patient.length()}</h1>
+            <h1>patient management : {state.patient.length}</h1>
             <form onSubmit={handleSubmit}>
                 <input value={nameRef}></input>
             </form>
