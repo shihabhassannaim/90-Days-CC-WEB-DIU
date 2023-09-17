@@ -6,6 +6,9 @@ const Home = () => {
     return (
         <div className='Home'>
             <Header/>
+            <h1>1st commit done
+                
+            </h1>
         </div>
     );
 };
