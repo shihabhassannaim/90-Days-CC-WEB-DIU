@@ -1,3 +1,37 @@
-header {
+.navbar {
     display: flex;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+.logo{
+    margin:10px 100px 0px 10px;
+}
+.logo img{
+    height: 40px;
+    width: 80px;
+    color: whitesmoke;
+}
+.search-bar{
+    background-color: transparent;
+    height: 35px;
+    width: 250px;
+    padding-left: 20px;
+    margin: 10px 40px 0 20px;
+    border-radius: 5px;
+    border: 2px solid wheat;
+    
+}
+.header-option {
+    width: 100px;
+    font: bold;
+    color: white;
+}
+.login-btn {
+    background-color: #F9A51A;
+    margin-top: 8px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
 }

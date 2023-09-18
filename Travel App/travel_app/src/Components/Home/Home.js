@@ -1,14 +1,13 @@
 import React from 'react';
 import './Home.css'
 import Header from '../Header/Header';
+import Body from '../Body/Body';
 
 const Home = () => {
     return (
         <div className='Home'>
             <Header/>
-            <h1>1st commit done
-                
-            </h1>
+            <Body />
         </div>
     );
 };
