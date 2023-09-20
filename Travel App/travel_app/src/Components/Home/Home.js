@@ -6,8 +6,9 @@ import Body from '../Body/Body';
 const Home = () => {
     return (
         <div className='Home'>
-            <Header/>
+            <Header></Header>
             <Body />
+            
         </div>
     );
 };
