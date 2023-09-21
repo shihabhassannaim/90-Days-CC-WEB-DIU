@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 .Home{
     background:rgba(0, 0, 0, 0.7) url("../.././images/Rectangle\ 1.png");
     background-blend-mode: darken;
