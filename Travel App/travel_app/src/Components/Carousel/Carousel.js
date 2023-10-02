@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { SlideShow } from './CarouselImage';
 import { Link } from 'react-router-dom';
-import Booking from '../Booking/Booking';
+import { userContext } from '../../App';
 
 const Carousel = () => {
-    const [Carousel, setCarousel] = useState(0);
+    const {Carousel , setCarousel} = useContext(userContext)
     const ImagePlus =()=>{
         setCarousel(Carousel === 2 ? 0 : Carousel + 1)
     }
